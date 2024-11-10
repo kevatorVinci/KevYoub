@@ -6,21 +6,26 @@ export class Main {
 
   minuteFiveSimple(minute) {
     
-      let minutesFive = Array(11).fill("O");
-      
-      
-      const blocksOfFive = Math.floor(minute / 5);
-  
-
-      for (let i = 0; i < blocksOfFive; i++) {
-          minutesFive[i] = (i % 3 === 2) ? 'R' : 'Y'; 
-      }
+      let minutesFive = this.loopMinutesFive(minute);
   
     
       return minutesFive.join('');
   }
   
   
+  loopMinutesFive(minute) {
+    let minutesFive = Array(11).fill("O");
+
+
+    const blocksOfFive = Math.floor(minute / 5);
+
+
+    for (let i = 0; i < blocksOfFive; i++) {
+      minutesFive[i] = (i % 3 === 2) ? 'R' : 'Y';
+    }
+    return minutesFive;
+  }
+
     loopBottomRow(minute) {
         let bottomRow = ["O", "O", "O", "O"];
         for (let i = 0; i < minute % 5; i++) {
