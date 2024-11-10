@@ -5,7 +5,8 @@ export class Main {
   };
 
   minuteFiveSimple(minute) {
-    return "OOOOOOOOOOO";
+    let minutesFive = Array(11).fill("O");
+    return minutesFive.join('');
     };
 
   
