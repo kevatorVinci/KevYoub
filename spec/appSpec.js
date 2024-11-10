@@ -101,11 +101,15 @@ describe('berlin horloge for minuteFiveSimple', function(){
     });
 
     it('minuteFiveSimple should return YYROOOOOOOO when given 16', function() {
-        const result = main.minuteFiveSimple(16
-            
-        );
+        const result = main.minuteFiveSimple(16);
 
         expect(result).toBe("YYROOOOOOOO");
+    });
+
+    it('minuteFiveSimple should return YYRYOOOOOOO when given 20', function() {
+        const result = main.minuteFiveSimple(20);
+
+        expect(result).toBe("YYRYOOOOOOO");
     });
 
 
