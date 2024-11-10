@@ -8,9 +8,16 @@ describe('berlin horloge for minuteSimple', function() {
     it('minuteSimple should return OOOO when given 0', function() {
         const result = main.minuteSimple(0);
 
-
         expect(result).toBe("OOOO");
     });
+
+    it('minuteSimple should return YOOO when given 1', function() {
+        const result = main.minuteSimple(1);
+
+        expect(result).toBe("YOOO");
+    });
+
+
 
 
 });
