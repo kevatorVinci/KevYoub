@@ -55,3 +55,17 @@ describe('berlin horloge for minuteSimple', function() {
 
 });
 
+describe('berlin horloge for minuteFiveSimple', function(){
+    const main = new Main();
+
+    it('minuteFiveSimple should return OOOOOOOOOOO when given 0', function() {
+        const result = main.minuteFiveSimple(0);
+
+        expect(result).toBe("OOOOOOOOOOO");
+    });
+
+    
+
+});
+
+

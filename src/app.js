@@ -4,6 +4,10 @@ export class Main {
     return bottomRow.join('');
   };
 
+  minuteFiveSimple(minute) {
+    return "OOOOOOOOOOO";
+    };
+
   
     loopBottomRow(minute) {
         let bottomRow = ["O", "O", "O", "O"];
