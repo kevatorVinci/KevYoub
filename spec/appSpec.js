@@ -130,24 +130,31 @@ describe('berlin horloge for minuteFiveSimple', function(){
         expect(result).toBe("YYRYYROOOOO");
     });
 
-    it('minuteFiveSimple should return YYRYYOOOOOO when given 31', function() {
+    it('minuteFiveSimple should return YYRYYROOOOO when given 31', function() {
         const result = main.minuteFiveSimple(31);
 
         expect(result).toBe("YYRYYROOOOO");
     });
 
-    it('minuteFiveSimple should return YYRYYOOOOOO when given 35', function() {
+    it('minuteFiveSimple should return YYRYYRYOOOO when given 35', function() {
         const result = main.minuteFiveSimple(35);
 
         expect(result).toBe("YYRYYRYOOOO");
     });
 
     
-    it('minuteFiveSimple should return YYRYYOOOOOO when given 36', function() {
+    it('minuteFiveSimple should return YYRYYRYOOOO when given 36', function() {
         const result = main.minuteFiveSimple(36);
 
         expect(result).toBe("YYRYYRYOOOO");
     });
+
+    it('minuteFiveSimple should return YYRYYRYYOOO when given 40', function() {
+        const result = main.minuteFiveSimple(40);
+
+        expect(result).toBe("YYRYYRYYOOO");
+    });
+
 
 
 
