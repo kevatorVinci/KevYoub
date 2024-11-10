@@ -16,6 +16,14 @@ export class Main {
       minutesFive[1]='Y';
 
     };
+
+    
+    if(minute>=15 && minute<20){
+      minutesFive[0]='Y';
+      minutesFive[1]='Y';
+      minutesFive[2]='R';
+
+    };
       
     return minutesFive.join('');
     };
