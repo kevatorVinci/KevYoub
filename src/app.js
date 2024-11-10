@@ -6,6 +6,11 @@ export class Main {
 
   minuteFiveSimple(minute) {
     let minutesFive = Array(11).fill("O");
+
+    if(minute===5){
+      minutesFive[0]='Y';
+    };
+      
     return minutesFive.join('');
     };
 
@@ -14,8 +19,8 @@ export class Main {
         let bottomRow = ["O", "O", "O", "O"];
         for (let i = 0; i < minute % 5; i++) {
             bottomRow[i] = 'Y';
-        }
+        };
         return bottomRow;
-    }
+    };
 };
 
