@@ -1,13 +1,34 @@
 export class Main {
+  minuteSimple(minute) {
+    let bottomRow = ["O", "O", "O", "O"];
 
-     minuteSimple(minute) {
-        if(minute===0)  return "OOOO";
-        if(minute===2)  return "YYOO";
-        if(minute===3)  return "YYYO";
-        if(minute===4)  return "YYYY";
+    if (minute === 0) {
+      return bottomRow.join("");
+    };
 
-        return "YOOO";
-        
-    }
+    if (minute === 1) {
+      bottomRow[0] = "Y";
+      return bottomRow.join("");
+    };
+    if (minute === 2) {
+      bottomRow[0] = "Y";
+      bottomRow[1] = "Y";
+      return bottomRow.join("");
+    };
 
-}
+    if (minute === 3) {
+      bottomRow[0] = "Y";
+      bottomRow[1] = "Y";
+      bottomRow[2] = "Y";
+      return bottomRow.join("");
+    };
+
+    if (minute === 4) {
+      bottomRow[0] = "Y";
+      bottomRow[1] = "Y";
+      bottomRow[2] = "Y";
+      bottomRow[3] = "Y";
+      return bottomRow.join("");
+    };
+  };
+};
