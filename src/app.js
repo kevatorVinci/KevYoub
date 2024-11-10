@@ -7,7 +7,7 @@ export class Main {
   minuteFiveSimple(minute) {
     let minutesFive = Array(11).fill("O");
 
-    if(minute===5){
+    if(minute>=5 && minute<10){
       minutesFive[0]='Y';
     };
       
