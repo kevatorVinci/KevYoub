@@ -17,6 +17,12 @@ describe('berlin horloge for minuteSimple', function() {
         expect(result).toBe("YOOO");
     });
 
+    it('minuteSimple should return YYOO when given 2', function() {
+        const result = main.minuteSimple(2);
+
+        expect(result).toBe("YYOO");
+    });
+
     
 
 
