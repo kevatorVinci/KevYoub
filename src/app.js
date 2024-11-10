@@ -10,6 +10,12 @@ export class Main {
     if(minute>=5 && minute<10){
       minutesFive[0]='Y';
     };
+
+    if(minute>=10 && minute<15){
+      minutesFive[0]='Y';
+      minutesFive[1]='Y';
+
+    };
       
     return minutesFive.join('');
     };

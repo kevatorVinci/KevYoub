@@ -82,6 +82,13 @@ describe('berlin horloge for minuteFiveSimple', function(){
         expect(result).toBe("YOOOOOOOOOO");
     });
 
+    it('minuteFiveSimple should return YOOOOOOOOOO when given 10', function() {
+        const result = main.minuteFiveSimple(10);
+
+        expect(result).toBe("YYOOOOOOOOO");
+    });
+
+
 
 });
 
