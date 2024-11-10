@@ -5,50 +5,21 @@ export class Main {
   };
 
   minuteFiveSimple(minute) {
-    let minutesFive = Array(11).fill("O");
-   
-
     
-
-    if(minute>=5 && minute<10){
-      minutesFive[0]='Y';
-    };
-
-    if(minute>=10 && minute<15){
-      minutesFive[0]='Y';
-      minutesFive[1]='Y';
-
-    };
-
-    
-    if(minute>=15 && minute<20){
-      minutesFive[0]='Y';
-      minutesFive[1]='Y';
-      minutesFive[2]='R';
-
-    };
-
-    if(minute>=20 && minute<25){
-      minutesFive[0]='Y';
-      minutesFive[1]='Y';
-      minutesFive[2]='R';
-      minutesFive[3]='Y';
-
-    };
-
-    if(minute>=25 && minute<30){
-      minutesFive[0]='Y';
-      minutesFive[1]='Y';
-      minutesFive[2]='R';
-      minutesFive[3]='Y';
-      minutesFive[4]='Y';
-
-    };
+      let minutesFive = Array(11).fill("O");
       
       
-    return minutesFive.join('');
-    };
+      const blocksOfFive = Math.floor(minute / 5);
+  
 
+      for (let i = 0; i < blocksOfFive; i++) {
+          minutesFive[i] = (i % 3 === 2) ? 'R' : 'Y'; 
+      }
+  
+    
+      return minutesFive.join('');
+  }
+  
   
     loopBottomRow(minute) {
         let bottomRow = ["O", "O", "O", "O"];
