@@ -32,6 +32,15 @@ export class Main {
       minutesFive[3]='Y';
 
     };
+
+    if(minute>=25 && minute<30){
+      minutesFive[0]='Y';
+      minutesFive[1]='Y';
+      minutesFive[2]='R';
+      minutesFive[3]='Y';
+      minutesFive[4]='Y';
+
+    };
       
       
     return minutesFive.join('');
