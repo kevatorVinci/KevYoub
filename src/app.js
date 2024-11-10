@@ -30,5 +30,11 @@ export class Main {
       bottomRow[3] = "Y";
       return bottomRow.join("");
     };
+
+    if (minute === 5) {
+      return bottomRow.join("");
+      };
+
+    
   };
 };
