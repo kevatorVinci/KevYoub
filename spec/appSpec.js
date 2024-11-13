@@ -248,7 +248,15 @@ describe('berlin horloge for hourSimple', function(){
     });
 });
 
+describe('berlin horloge for hourSimple',function(){
+    const main = new Main();
+    it('hourSimpleFive should return OOOO when given 0', function() {
+                const result =main.hourSimpleFive(0);
 
+            expect(result).toBe("OOOO");
+    })
+
+});
 
 
 

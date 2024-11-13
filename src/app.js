@@ -17,10 +17,13 @@ export class Main {
   
     return hourSimpleRow.join('');
 
-
-    
-
   };
+
+  hourSimpleFive(hour){
+
+return "OOOO";
+
+  }
   
   
   loopHourSimple(hour) {
