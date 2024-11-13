@@ -15,12 +15,10 @@ export class Main {
   hourSimple(hour) {
     let hourSimpleRow = Array(4).fill("O");
 
-    if(hour ==1){
-        hourSimpleRow[0] = 'R';
-    } 
-    if(hour ==2){
-        hourSimpleRow[0] = 'R';
-        hourSimpleRow[1] = 'R';
+    
+
+    for (let i = 0; i < hour ; i++) {
+      hourSimpleRow[i] = 'R';
     }
   
     return hourSimpleRow.join('');
