@@ -257,4 +257,9 @@ describe("berlin horloge for hourSimple", function () {
     expect(result).toBe("ROOO");
   });
 
+  it("hourSimpleFive should return ROOO when given 6", function () {
+    const result = main.hourSimpleFive(6);
+
+    expect(result).toBe("ROOO");
+  });
 });
