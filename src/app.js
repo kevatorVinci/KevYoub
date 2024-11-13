@@ -11,6 +11,11 @@ export class Main {
     
       return minutesFive.join('');
   }
+
+  hourSimple(hour) {
+    return "OOOO";
+
+  };
   
   
   loopMinutesFive(minute) {

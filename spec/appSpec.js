@@ -202,4 +202,17 @@ describe('berlin horloge for minuteFiveSimple', function(){
 
 });
 
+describe('berlin horloge for hourSimple', function(){
+    const main = new Main();
+
+    it('hourSimple should return OOOO when given 0', function() {
+        const result = main.hourSimple(0);
+
+        expect(result).toBe("OOOO");
+    });
+});
+
+
+
+
 
