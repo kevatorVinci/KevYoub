@@ -333,6 +333,6 @@ describe("berlin horloge for secondSimple", function () {
 
 const main = new Main();
 
-console.log("l horloge actuel est \n " + main.berlinClock());
+console.log("current clock is \n " + main.berlinClock());
 
 
