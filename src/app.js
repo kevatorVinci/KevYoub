@@ -27,6 +27,30 @@ export class Main {
   }
 
 
+  berlinClock() {
+    const date = new Date;
+
+    const seconde = date.getSeconds();
+    const hour = date.getHours();
+    const minute = date.getMinutes();
+
+    const secondSimple = this.secondSimple(seconde);
+    const hourSimpleFive = this.hourSimpleFive(hour);
+    const hourSimple = this.hourSimple(hour);
+    const minuteFiveSimple = this.minuteFiveSimple(minute);
+    const minuteSimple = this.minuteSimple(minute);
+
+    return secondSimple + "\n" + hourSimpleFive+ "\n" + hourSimple + "\n"+ minuteFiveSimple + "\n"  + minuteSimple + "\n" + date;
+
+
+
+
+  }
+
+
+
+
+
 
 
 
