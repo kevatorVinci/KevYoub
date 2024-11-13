@@ -13,7 +13,17 @@ export class Main {
   }
 
   hourSimple(hour) {
-    return "OOOO";
+    let hourSimpleRow = Array(4).fill("O");
+
+    if(hour ==1){
+        hourSimpleRow[0] = 'R';
+    } 
+  
+
+    return hourSimpleRow.join('');
+
+
+    
 
   };
   
