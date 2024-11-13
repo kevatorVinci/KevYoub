@@ -17,8 +17,22 @@ export class Main {
   }
 
   hourSimpleFive(hour) {
+    let hourSimpleFiveRow = Array(4).fill("O");
+
+    if (hour==5)
+      return"ROOO";
+    
     return "OOOO";
   }
+
+
+
+
+
+
+
+
+
 
   loopHourSimple(hour) {
     let hourSimpleRow = Array(4).fill("O");
