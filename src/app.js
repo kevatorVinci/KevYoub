@@ -22,7 +22,12 @@ export class Main {
   }
 
   secondSimple(second) {
-    return "R";
+    if (second === 0) {
+      return "R";
+    }else{
+      return "O";
+    }
+    
   }
 
 
