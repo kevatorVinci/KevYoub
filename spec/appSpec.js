@@ -222,6 +222,12 @@ describe('berlin horloge for hourSimple', function(){
 
         expect(result).toBe("RROO");
     });
+
+    it('hourSimple should return RRRO when given 3', function() {
+        const result = main.hourSimple(3);
+
+        expect(result).toBe("RRRO");
+    });
 });
 
 
