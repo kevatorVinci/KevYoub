@@ -22,9 +22,9 @@ export class Main {
   }
 
   secondSimple(second) {
-    if (second === 0) {
+    if (second % 2 === 0) {
       return "R";
-    }else{
+    } else {
       return "O";
     }
     
