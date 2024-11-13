@@ -18,8 +18,11 @@ export class Main {
     if(hour ==1){
         hourSimpleRow[0] = 'R';
     } 
+    if(hour ==2){
+        hourSimpleRow[0] = 'R';
+        hourSimpleRow[1] = 'R';
+    }
   
-
     return hourSimpleRow.join('');
 
 
