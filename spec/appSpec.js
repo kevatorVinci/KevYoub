@@ -286,4 +286,12 @@ describe("berlin horloge for hourSimple", function () {
 
     expect(result).toBe("RRRO");
   });
+
+  it("hourSimpleFive should return RRRR when given 20", function () {
+    const result = main.hourSimpleFive(20);
+
+    expect(result).toBe("RRRR");
+  });
+
+
 });
