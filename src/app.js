@@ -13,13 +13,7 @@ export class Main {
   }
 
   hourSimple(hour) {
-    let hourSimpleRow = Array(4).fill("O");
-
-    
-
-    for (let i = 0; i < hour%5 ; i++) {
-      hourSimpleRow[i] = 'R';
-    }
+    let hourSimpleRow = this.loopHourSimple(hour);
   
     return hourSimpleRow.join('');
 
@@ -29,6 +23,17 @@ export class Main {
   };
   
   
+  loopHourSimple(hour) {
+    let hourSimpleRow = Array(4).fill("O");
+
+
+
+    for (let i = 0; i < hour % 5; i++) {
+      hourSimpleRow[i] = 'R';
+    }
+    return hourSimpleRow;
+  }
+
   loopMinutesFive(minute) {
     let minutesFive = Array(11).fill("O");
 
