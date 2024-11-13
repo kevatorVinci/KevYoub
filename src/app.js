@@ -21,6 +21,10 @@ export class Main {
     return hourSimpleFiveRow.join('');
   }
 
+  secondSimple(second) {
+    return "R";
+  }
+
 
 
 

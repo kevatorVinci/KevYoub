@@ -301,3 +301,14 @@ describe("berlin horloge for hourSimple", function () {
 
 
 });
+
+describe("berlin horloge for secondSimple", function () {
+    const main = new Main();
+
+    it("secondSimple should return R when given 0", function () {
+        const result = main.secondSimple(0);
+
+        expect(result).toBe("R");
+    });
+
+});
