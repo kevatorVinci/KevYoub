@@ -17,13 +17,7 @@ export class Main {
   }
 
   hourSimpleFive(hour) {
-    let hourSimpleFiveRow = Array(4).fill("O");
-
-    const blocksOfFive = Math.floor(hour/5);
-
-    for( let i = 0; i < blocksOfFive; i++ ){
-      hourSimpleFiveRow[i]="R";
-    }
+    let hourSimpleFiveRow = this.loopHourFive(hour);
     return hourSimpleFiveRow.join('');
   }
 
@@ -35,6 +29,17 @@ export class Main {
 
 
 
+
+  loopHourFive(hour) {
+    let hourSimpleFiveRow = Array(4).fill("O");
+
+    const blocksOfFive = Math.floor(hour / 5);
+
+    for (let i = 0; i < blocksOfFive; i++) {
+      hourSimpleFiveRow[i] = "R";
+    }
+    return hourSimpleFiveRow;
+  }
 
   loopHourSimple(hour) {
     let hourSimpleRow = Array(4).fill("O");
