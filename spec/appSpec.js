@@ -323,4 +323,10 @@ describe("berlin horloge for secondSimple", function () {
         expect(result).toBe("R");
     });
 
+    it("secondSimple should return O when given 3", function () {
+        const result = main.secondSimple(3);
+
+        expect(result).toBe("O");
+    });
+
 });
