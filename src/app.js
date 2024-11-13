@@ -17,7 +17,7 @@ export class Main {
 
     
 
-    for (let i = 0; i < hour ; i++) {
+    for (let i = 0; i < hour%5 ; i++) {
       hourSimpleRow[i] = 'R';
     }
   
