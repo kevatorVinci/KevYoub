@@ -1,5 +1,5 @@
 # Dépendances Node
-node_modules/
+node_modules
 
 # Dossier de build
 dist/
